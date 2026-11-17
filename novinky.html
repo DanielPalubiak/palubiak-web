@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technologické novinky zo sveta smartfónov a umelej inteligencie.">
+  <title>Tech novinky - Smartphone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Smartphone - domov"><img src="pictures/smartphone logo 1.png"
+          alt="Smartphone"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+        aria-label="Otvoriť navigáciu"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Hlavná navigácia">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="novinky.html">Tech novinky</a>
+        <a class="nav-link" href="index.html#kontakt">Kontakt</a>
+        <a class="nav-link" href="https://www.gmail.com/">Prihlásiť sa</a>
+        <button class="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel">Čo hľadáte? <i
+            class="fa fa-search" aria-hidden="true"></i></button>
+        <a class="nav-icon" href="#message" aria-label="Správy"><i class="fa fa-envelope fa-2x icon"
+            aria-hidden="true"></i></a>
+        <a class="nav-icon" href="index.html#oblubene" aria-label="Obľúbené telefóny"><i class="fa fa-heart fa-2x icon"
+            aria-hidden="true"></i></a>
+        <a class="nav-icon" href="index.html#oblubene" aria-label="Nákupný košík"><i
+            class="fa fa-shopping-cart fa-2x icon" aria-hidden="true"></i></a>
+      </nav>
+    </div>
+    <div class="search-panel" id="search-panel" hidden>
+      <label for="site-search">Vyhľadať článok</label>
+      <input type="search" id="site-search" placeholder="Napr. AI, Google, OnePlus..." autocomplete="off">
+      <p id="search-status" class="search-status" aria-live="polite">Zadajte výraz na vyhľadávanie.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section dark-section news-page">
+      <div class="section-inner">
+        <div class="section-title">
+          <img src="pictures/Line .png" alt="" class="title-line">
+          <h1>Tech novinky</h1>
+        </div>
+        <p class="page-intro">Zaujímavosti zo sveta smartfónov, umelej inteligencie a moderných technológií.</p>
+
+        <div class="news-grid">
+          <article class="news-card searchable" data-search="AI Pin umelá inteligencia smartfón zariadenie">
+            <a
+              href="https://www.nextech.sk/a/Toto-je-AI-Pin--zariadenie-s-umelou-inteligenciou--ktore-nahradi-vas-smartfon">
+              <img src="pictures/Tech/pad.png" alt="Zariadenie AI Pin">
+            </a>
+            <div class="news-copy">
+              <h2>AI Pin je alternatíva smartfónu za 700 dolárov, ktorú nosíte celý deň</h2>
+              <p>Nový typ nositeľného zariadenia ukazuje, ako by mohla umelá inteligencia zmeniť spôsob, akým
+                komunikujeme s technológiami.</p>
+              <a class="red-button"
+                href="https://www.nextech.sk/a/Toto-je-AI-Pin--zariadenie-s-umelou-inteligenciou--ktore-nahradi-vas-smartfon">Čítať
+                viac <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card searchable" data-search="OnePlus skladací telefón smartfón">
+            <a href="https://touchit.sk/prvy-skladaci-telefon-od-oneplus-bude-meskat/522655">
+              <img src="pictures/Tech/one_plus.png" alt="Skladací telefón OnePlus">
+            </a>
+            <div class="news-copy">
+              <h2>Prvý skladací telefón od OnePlus</h2>
+              <p>Skladacie telefóny prinášajú nové možnosti používania a výrobcovia sa snažia zaujať vlastným riešením
+                konštrukcie aj displeja.</p>
+              <a class="red-button" href="https://touchit.sk/prvy-skladaci-telefon-od-oneplus-bude-meskat/522655">Čítať
+                viac <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card searchable" data-search="Google Assistant generatívna umelá inteligencia AI">
+            <a href="https://www.wired.com/story/google-assistant-multi-modal-upgrade-bard-generative-ai/">
+              <img src="pictures/Tech/assistant.png" alt="Google Assistant a umelá inteligencia">
+            </a>
+            <div class="news-copy">
+              <h2>Asistent Google dostáva generatívnu umelú inteligenciu</h2>
+              <p>Generatívna AI rozširuje možnosti hlasových asistentov a umožňuje prirodzenejšiu komunikáciu aj
+                komplexnejšie úlohy.</p>
+              <a class="red-button"
+                href="https://www.wired.com/story/google-assistant-multi-modal-upgrade-bard-generative-ai/">Čítať viac
+                <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+        <p class="empty-results" id="empty-results" hidden>Nenašli sa žiadne články zodpovedajúce vyhľadávaniu.</p>
+        <a class="red-button back-button" href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Späť na
+          telefóny</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Daniel Palubiak</p>
+    <a href="index.html#kontakt">Kontakt</a>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+
+</html>
